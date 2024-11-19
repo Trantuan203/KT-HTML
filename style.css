@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Khu vực kết quả */
+.result-area {
+    display: flex;
+    justify-content: center; /* Canh giữa */
+    margin: 20px 0;
+    gap: 5px; /* Giảm khoảng cách giữa các ô */
+}
+
+.result-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-box img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.result-box span {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Ghi chú */
+.note {
+    font-size: 20px;
+    color: #096e05;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Khu vực đặt cược */
+.bet-area {
+    display: flex;
+    justify-content: space-between; /* Căn đều khoảng cách giữa các bet-box */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+    margin: 30px 0;
+    flex-wrap: wrap; /* Đảm bảo không bị tràn nếu không đủ không gian */
+}
+
+/* Hiệu ứng nổi lên cho các bet-box */
+.bet-box {
+    position: relative; /* Cho phép định vị các phần tử con */
+    width: 100px; /* Đặt kích thước cố định cho các box */
+    text-align: center;
+    border: 1px solid #000000;
+    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng chuyển động */
+}
+
+.bet-box img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ffffff; /* Đường viền nhẹ */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hiệu ứng khi hover vào bet-box */
+.bet-box:hover {
+    transform: translateY(-10px); /* Nổi lên khi di chuột vào */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ khi nổi lên */
+}
+
+/* Chữ trên bet-box */
+.bet-box span {
+    position: absolute;
+    top: 0px; /* Đưa số lên phía trên bên trái */
+    left: 5px; /* Canh lề trái */
+    color: darkgreen; /* Màu chữ xanh đậm */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background: none; /* Không có nền */
+}
+/* Khu vực nút bấm */
+.button-area {
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end; /* Căn chỉnh các nút bấm về phía bên phải */
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+button {
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+

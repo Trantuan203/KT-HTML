@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Bầu Cua</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Trò chơi Bầu Cua</h1>
+
+        <!-- Kết quả -->
+        <div class="result-area">
+            <div class="result-box">
+                <img src="image/bau.png" alt="Bau">
+                
+            </div>
+            <div class="result-box">
+                <img src="image/bau.png" alt="Bau">
+               
+            </div>
+            <div class="result-box">
+                <img src="image/bau.png" alt="Bau">
+              
+            </div>
+        </div>
+
+        <div class="button-area">
+            <button id="spin-btn">Quay</button>
+        </div>
+        <!-- Khu vực đặt cược -->
+        <div class="bet-area">
+            <div class="bet-box">
+                <img src="image/bau.png" alt="Bau">
+                <span>0</span>
+            </div>
+            <div class="bet-box">
+                <img src="image/cua.png" alt="Cua">
+                <span>0</span>
+            </div>
+            <div class="bet-box">
+                <img src="image/tom.png" alt="Tom">
+                <span>0</span>
+            </div>
+            <div class="bet-box">
+                <img src="image/ca.png" alt="Ca">
+                <span>0</span>
+            </div>
+            <div class="bet-box">
+                <img src="image/huou.png" alt="Huou">
+                <span>0</span>
+            </div>
+            <div class="bet-box">
+                <img src="image/ga.png" alt="Ga">
+                <span>0</span>
+            </div>
+        </div>
+
+        <!-- Các nút bấm -->
+        <div class="button-area">
+        
+            <button id="reset-btn">Đặt lại</button>
+        </div>
+         <!-- Ghi chú -->
+         <p class="note">
+            - Số lần đặt ở một 'Hình' sẽ là số lần xuất hiện của các 'Hình' trên 'Kết quả' <br>
+            - Tổng số điểm đặt trong một lần, tối đa là 3
+        </p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
